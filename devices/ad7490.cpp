@@ -1,7 +1,5 @@
 // Includes
 #include "ad7490.h"
-#include <cstdint>
-#include "init.h"
 
 class AD7490 {
     public:
