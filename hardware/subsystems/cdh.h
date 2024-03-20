@@ -1,34 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/stat.h>
-#include <unistd.h>
-#include <dirent.h>
-#include <float.h>
-#include <math.h>
-#include <errno.h>
-#include <time.h>
-#include <sys/time.h>
-#include <ctype.h>
-#include <stdbool.h>
-#include <stdint.h>
-#include <fcntl.h>
-#include <sys/ioctl.h>
-#include <pthread.h>
-/* #include <linux/i2c.h>
-#include <linux/i2c-dev.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spidev.h>
-#include <signal.h>
-*/
-
 #ifndef CDH_H_   
 #define CDH_H_
-
-// DEFINITIONS
-
-#define NUM_I2C 1    //.. number of I2C buses available
-#define NUM_SPI 4    //.. number of SPI channels available
+#include "../../flacsat.h"
 
 // STRUCTURE TYPES
 
@@ -42,6 +14,7 @@ struct CDHType {
   pthread_mutex_t mutex;
 
   //.. devices
+  RASPI4BType * flight_computer;
 };
 
 // FUNCTIONS
