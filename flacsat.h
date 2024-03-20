@@ -28,41 +28,53 @@
 // GLOBAL VARIABLES
 volatile bool   MAIN_RUNNING = true;        //.. flag for whether main should continue running
 
+/*
+#include "io/fio.cpp"
+#include "io/errors.cpp"
+*/
 
-#include "io/fio.c"
-#include "io/errors.c"
+#include "hardware/devices/raspi4b.cpp"
+#include "hardware/subsystems/cdh.cpp"
 
-#include "hardware/devices/raspi4b.c"
-#include "hardware/subsystems/cdh.c"
+/*
+#include "hardware/devices/ms5837.cpp"
+#include "hardware/devices/lg160431.cpp"
+#include "hardware/devices/ltc2620.cpp"
+*/
 
-#include "hardware/devices/ms5837.c"
-#include "hardware/devices/lg160431.c"
-#include "hardware/devices/max7300.c"
-#include "hardware/devices/ltc2620.c"
-#include "hardware/devices/ad7490.c"
-#include "hardware/subsystems/femta.c"
+#include "hardware/devices/max7300.cpp"
+#include "hardware/devices/ad7490.cpp"
+#include "hardware/subsystems/femta.cpp"
 
-#include "hardware/subsystems/comm.c"
-#include "hardware/subsystems/eps.c"
-#include "hardware/subsystems/adcs.c"
-#include "hardware/subsystems/laser.c"
+#include "hardware/subsystems/adcs.cpp"
 
-#include "hardware/satellite.c"
+/*
+#include "hardware/subsystems/comm.cpp"
+#include "hardware/subsystems/eps.cpp"
+#include "hardware/subsystems/laser.cpp"
+*/
+
+
+#include "hardware/satellite.cpp"
 
 // threads files
-#include "threads/mode.c"
-#include "threads/data.c"
-#include "io/commands.c"
 
-#include "conops/deploy.c"
-#include "conops/safe.c"
-#include "conops/standby.c"
-#include "conops/femta_test.c"
-#include "conops/femta_pointing.c"
-#include "conops/adcs_laser.c"
-#include "conops/femta_laser.c"
-#include "conops/communication.c"
+/*
+#include "threads/mode.cpp"
+#include "threads/data.cpp"
+#include "io/commands.cpp"
+*/
 
+/*
+#include "conops/deploy.cpp"
+#include "conops/safe.cpp"
+#include "conops/standby.cpp"
+#include "conops/femta_test.cpp"
+#include "conops/femta_pointing.cpp"
+#include "conops/adcs_laser.cpp"
+#include "conops/femta_laser.cpp"
+#include "conops/communication.cpp"
+*/
 
 // DEFINITIONS
 

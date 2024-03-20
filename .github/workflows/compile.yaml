@@ -5,7 +5,7 @@ on: [push, pull_request]
 env:
   CMAKE_VERSION: 3.24.3
   NINJA_VERSION: 1.11.1
-  BUILD_TYPE: Release
+  BUILD_TYPE: Debug
   CCACHE_VERSION: 4.9
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       matrix:
         config:
         - {
-            name: "Ubuntu Latest GCC", artifact: "Linux.7z",
+            name: "Ubuntu, latest GCC, Thermal test", artifact: "Linux.7z",
             os: ubuntu-latest,
             cc: "gcc", cxx: "g++"
           }

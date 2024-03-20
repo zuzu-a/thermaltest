@@ -2,5 +2,6 @@
     "files.associations": {
         "__mutex_base": "cpp",
         "string": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": true
 }
