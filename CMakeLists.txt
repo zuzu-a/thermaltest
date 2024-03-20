@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(thermaltest)
+project(flacsat)
 
-add_executable(thermaltest thermaltest.cpp)
+add_executable(flacsat flacsat.cpp)
 
-install(TARGETS thermaltest)
+install(TARGETS flacsat)
 
 enable_testing()
-add_test(NAME thermaltest COMMAND thermaltest)
+add_test(NAME flacsat COMMAND flacsat)
